@@ -8,3 +8,10 @@ listItems[2].style.backgroundColor = 'yellow';
 listItems.forEach(function(item) {
   item.style.fontWeight = 'bold';
 });
+var fifthListItem = document.querySelectorAll('.fruits li')[4]; // 5th item has index 4
+fifthListItem.style.color = 'blue';
+
+var listItems = document.querySelectorAll('.fruits li');
+listItems.forEach(function(item) {
+  item.style.fontStyle = 'italic';
+});
