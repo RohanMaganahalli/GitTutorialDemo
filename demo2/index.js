@@ -32,6 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('UserDetails', JSON.stringify(users));
     }
   
+    // Function to load user details from local storage
+    function loadUserDetails() {
+      const users = JSON.parse(localStorage.getItem('UserDetails')) || [];
+      users.forEach(user => addUserToList(user));
+    }
+  
+    // Load user details when the page loads
+    loadUserDetails();
+  
     // Attach event listener to the form
     form.addEventListener('submit', handleFormSubmit);
   });
