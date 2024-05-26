@@ -45,7 +45,7 @@ function renderNotes(filteredNotes = notes) {
     noteText.textContent = `Title: ${note.title}`;
 
     const noteDescription = document.createElement('p');
-    noteDescription.textContent = `Description: ${note.description}`;
+    noteDescription.textContent = `Description of the notebook: ${note.description}`;
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
